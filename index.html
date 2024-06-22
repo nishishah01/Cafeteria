@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Java Junction</h1>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <img src="images/coffee.jpg" alt="Coffee">
+                <h3>Coffee</h3>
+                <p>₹125</p>
+                <button onclick="addToCart('Coffee', 125)">Add to Cart</button>
+            </div>
+            <div class="menu-item" id="moz">
+                <img src="images/flatbreads.jpg" alt="Flatbreads">
+                <h3>Mozzarella Flatbread</h3>
+                <p>₹260</p>
+                <button onclick="addToCart('Mozzarella Flatbread', 260)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/fritters.jpg" alt="Fritters">
+                <h3>Cheese Fritters</h3>
+                <p>₹180</p>
+                <button onclick="addToCart('Cheese Fritters', 180)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/dessert.jpg" alt="Cheesecake">
+                <h3>Lotus Biscoff Cheesecake</h3>
+                <p>₹250</p>
+                <button onclick="addToCart('Lotus Biscoff Cheesecake', 250)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/nachos.jpg" alt="Nachos">
+                <h3>Loaded Nachos</h3>
+                <p>₹230</p>
+                <button onclick="addToCart('Loaded Nachos', 230)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/sandwich.jpg" alt="Sandwich">
+                <h3>Grilled Sandwich</h3>
+                <p>₹125</p>
+                <button onclick="addToCart('Grilled Sandwich', 125)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/pasta.jpg" alt="Pasta">
+                <h3>Pesto Pasta</h3>
+                <p>₹200</p>
+                <button onclick="addToCart('Pesto Pasta', 200)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/wrap.jpg" alt="wrap">
+                <h3>Mexican Wrap</h3>
+                <p>₹130</p>
+                <button onclick="addToCart('Mexican Wrap', 130)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/potato.jpg" alt="twisters">
+                <h3>Potato Twisters</h3>
+                <p>₹110</p>
+                <button onclick="addToCart('Potato Twisters', 110)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-cost">Total: ₹0.00</p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+<footer>
+    <p>© Copyright2024, JavaJunction</p>
+</footer>
+</html>
+
